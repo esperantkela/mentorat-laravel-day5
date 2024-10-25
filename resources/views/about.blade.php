@@ -1,7 +1,11 @@
 @extends('layouts.app')
 @section('title', 'A propos')
+@php
+    $content = "Some quick example text to build on the card title and make up the bulk of the card's content.";
+@endphp
 @section('content')
     <section class="py-5 text-center container">
+        <x-card title="About title" :body="$content" link="google.com" />
         <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
                 <h1 class="fw-light">About</h1>
